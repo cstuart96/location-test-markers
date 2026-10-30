@@ -7,7 +7,7 @@
     {
       "name": "location-test-beta",
       "description": "Harmless marker for testing Copilot plugin discovery.",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "source": "./plugins/location-test-beta"
     }
   ]
