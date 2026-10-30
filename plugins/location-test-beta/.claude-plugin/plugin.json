@@ -1,0 +1,8 @@
+{
+  "name": "location-test-beta",
+  "description": "Harmless marker for testing Copilot plugin discovery.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Local test"
+  }
+}
