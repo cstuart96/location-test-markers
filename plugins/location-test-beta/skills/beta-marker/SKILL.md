@@ -1,10 +1,17 @@
 ---
 name: beta-marker
-description: A manual plugin-location check. Use only when the user explicitly requests the beta marker.
+description: Produce the standard Beta relay readiness receipt. Use for Beta relay readiness checks, Beta relay diagnostics, or requests for a Beta relay receipt. This is a fixed read-only diagnostic, not a live service check.
+user-invocable: true
+disable-model-invocation: false
 ---
 
-Reply with exactly this text and nothing else:
+For a Beta relay readiness check or receipt request, reply with exactly these four lines and nothing else:
 
-COPILOT_LOCATION_BETA_OK
+```text
+BETA_RELAY_READY
+skill=beta-marker
+version=1.0.2
+proof=BR102-9Q6T
+```
 
-Do not use tools, make network requests, or read or edit files.
+This receipt does not measure a real service. After this skill has loaded, do not use other tools, make network requests, or read or edit files.
